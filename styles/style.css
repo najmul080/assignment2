@@ -1,0 +1,252 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Work Sans', sans-serif;
+}
+
+ /* Navigation Menu style start */
+.container{
+    display: flex;
+   justify-content: space-around;
+   margin-top: 1em;
+}
+.nav-header h2{
+    font-size: 30px;
+    color: brown;
+}
+.navigation-list{
+    display: flex;
+}
+.nav-link{
+    margin-left: 1.5em;
+    margin-top: 0.5em;
+}
+.nav-link a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+}
+ /* Navigation Menu style end */
+
+ /* Header style start */
+.header{
+    margin-top: 2em;
+    text-align: center;
+}
+.header-info h1{
+    font-size: 35px;
+    margin-bottom: 0.5em;
+}
+.header-info p{
+    font-size: 16px;
+    margin-bottom: 1em;
+    font-weight:600;
+}
+.header-img img{
+    width: 70%;
+}
+.explore-btn{
+    background-color: #FF900E;
+    color: #fff;
+    border-style: none;
+    padding: 1em 1.5em;
+    margin-bottom: 2em;
+    border-radius: 5px;
+    font-size: 16px;
+}
+ /* Header style end */
+
+ /* main section style start */
+ .feature-section{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center; 
+    align-items: center; 
+    margin: 50px 150px;
+    
+ }
+ .feature-img{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+ }
+ .feature-img img{
+    width: 90%;
+ }
+ .features{
+    color: #FF900E;
+ }
+ .feature-info p{
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 1em;
+    margin-bottom: 1em;
+
+ }
+ .feature-list-section{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 80px;
+    position: relative;
+ }
+
+ .feature-bar{
+    background-color: #FF900E;
+    height: 80px;
+    width: 5px;
+    position: absolute;
+    top: 0;
+    left: 110px;
+
+ }
+ .feature-bar-header{
+    margin-left: 120px;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+ }
+.feature-boxes{
+   padding-left: 100px;
+}
+.feat-box{
+    width: 80%;
+    padding: 1.5em;
+    background-color: aliceblue;
+    margin-bottom: 1em;
+}
+ .feature-list-img img{
+    width: 73%;
+    height: 87%;
+    position: relative;
+ }
+ .experience-btn{
+    background-color: #FF900E;
+    padding: 1em;
+    width: 245px;
+    height: 100px;
+    border-style: none;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 30px;
+    right: 530px;
+    color: white;
+    font-size: 18px;
+ }
+ .experience-span{
+    font-size: 35px;
+    font-weight: bold;
+ }
+ .facts-section{
+    padding-left: 2em;
+    margin-bottom: 2em;
+
+ }
+ .facts-section p{
+    font-weight: bold;
+
+ }
+.facts-list{
+    display: flex;
+    justify-content: space-around;
+
+}
+.fact{
+    border: 1px solid #FF900E;
+    border-radius: 4px;
+    padding: 1.5em;
+    margin-top: 1em;
+}
+
+
+/* animation */
+.fact {
+    width: 200px;
+    height: 150px;
+    box-shadow: 16px 14px 20px #b48d8d8c;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.sponsors-section{
+    text-align: center;
+    margin-top: 3em;
+    margin-bottom: 4em;
+}
+.sponsors-lists{
+    display: grid;
+grid-template-columns: repeat(5, 1fr) ;
+margin-top: 2em;
+}
+
+footer{
+    width: 80%;
+    height: 100px;
+    background-color: #FFF4E7;
+    text-align: center;
+    margin-left: 10%;
+    margin-bottom: 5em;
+}
+.footer{
+    margin-top: 2em;
+    padding-top: 2.2em;
+}
+ /* main section style end */
+
+
+
+/* Responsive  */
+/* Mobile Devices */
+@media only screen and (max-width:576px) {
+
+     /* Navigation Menu responsive style start */ 
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .navigation-list{
+        display: flex;
+        flex-direction: column;
+    }
+      /* Navigation Menu responsive style end */ 
+
+
+      /* feature section responsive style */
+      .feature-section{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin: 50px;
+      }
+      .feature-img{
+        grid-template-columns: repeat(1, 1fr);
+        margin-bottom: 1em;
+
+      }
+      .feature-list-section{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+      }
+      .feature-list-img img{
+        margin-left: 1em;
+      }
+      .experience-btn{
+        position: absolute;
+        bottom: 0;
+        left: 10px;
+      }
+      .facts-list{
+        display: grid;
+       grid-template-columns: repeat(1, 1fr);
+      }
+      .sponsors-lists{
+        display: grid;
+    grid-template-columns: repeat(1, 1fr) ;
+    margin-top: 3em;
+    }
+}
